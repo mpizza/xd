@@ -1,0 +1,74 @@
+.avatar {
+  width: 136px;
+  height: 136px;
+  display: block;
+  border-radius: 50%;
+  background-color: #44eace;
+  position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.avatar:hover {
+  cursor: pointer;
+}
+
+.avatar.friend {
+  position: absolute;
+}
+
+.avatar.friend.focused {
+  z-index: 9999;
+}
+
+.avatar .avatar-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 128px 128px 128px 128px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background-size: 128px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.avatar .avatar-name {
+  width: 130px;
+  height: 64px;
+  position: absolute;
+  top: 68px;
+  left: 4px;
+  line-height: 64px;
+  border-radius: 0 0 130px 130px;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  /* Firefox */
+  -moz-transition: background-color 0.3s ease-in;
+  /* WebKit */
+  -webkit-transition: background-color 0.3s ease-in;
+  /* Opera */
+  -o-transition: background-color 0.3s ease-in;
+  /* Standard */
+  transition: background-color 0.3s ease-in;
+  background-color: rgba(68, 250, 207, 0.7);
+}
+
+.avatar:hover .avatar-name {
+  background-color: rgba(68, 250, 207, 0);
+}
+
+.avatar.userSelf {
+  display: none;
+}
+
+#friendlist {
+  height: 800px;
+}
+
+.friends-container {
+  margin: 68px;
+}
